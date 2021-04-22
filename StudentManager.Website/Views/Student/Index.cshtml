@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Student>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<form  method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="search" class="form-control" value="" name="searchTerm" />
+            <span class="input-group-btn"><button class="btn btn-dark">SEARCH</button></span>
+        </div>
+    </div>
+</form>
+<table class="table">
+    <thead class="table-dark">
+        <tr>
+            <td>
+                ID
+            </td>
+            <td>
+                NAME
+            </td>
+            <td>
+                PROGRAM
+            </td>
+        </tr>
+    </thead>
+    @foreach(var item in Model)
+            {
+<tr>
+    <td>
+        @item.Id
+    </td>
+    <td>
+        @item.Name
+    </td>
+    <td>
+        @item.Program.Name
+    </td>
+    
+</tr>
+            }
+</table>

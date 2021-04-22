@@ -1,0 +1,6 @@
+C:\Users\gabeb\OneDrive\Desktop\Gabe's Stuff\GitHubRepositories\MidTerm\StudentManager\StudentManager.BL\obj\Debug\StudentManager.BL.csprojAssemblyReference.cache
+C:\Users\gabeb\OneDrive\Desktop\Gabe's Stuff\GitHubRepositories\MidTerm\StudentManager\StudentManager.BL\obj\Debug\StudentManager.BL.csproj.CoreCompileInputs.cache
+C:\Users\gabeb\OneDrive\Desktop\Gabe's Stuff\GitHubRepositories\MidTerm\StudentManager\StudentManager.BL\bin\Debug\StudentManager.BL.dll
+C:\Users\gabeb\OneDrive\Desktop\Gabe's Stuff\GitHubRepositories\MidTerm\StudentManager\StudentManager.BL\bin\Debug\StudentManager.BL.pdb
+C:\Users\gabeb\OneDrive\Desktop\Gabe's Stuff\GitHubRepositories\MidTerm\StudentManager\StudentManager.BL\obj\Debug\StudentManager.BL.dll
+C:\Users\gabeb\OneDrive\Desktop\Gabe's Stuff\GitHubRepositories\MidTerm\StudentManager\StudentManager.BL\obj\Debug\StudentManager.BL.pdb
