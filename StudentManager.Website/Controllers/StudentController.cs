@@ -24,18 +24,28 @@ namespace StudentManager.Website.Controllers
         {
             return View(school.GetStudentByString(searchTerm));
         }
-        
-        public IActionResult Create()
+        [HttpPost]
+        public IActionResult Create(long id, string name, long programId)
         {
-            return View(school);
+            school.CreateStudent(id, name, programId);
+            return View("Index", school.GetStudentByString(null));
         }
-        public IActionResult Delete()
+        [HttpPost]
+        public IActionResult Delete(long id)
         {
-            return View(school);
+            school.DeleteStudent(id);
+            return View("Index", school.GetStudentByString(null));
         }
-        public IActionResult Edit()
+        [HttpPost]
+        public IActionResult Edit(long id, string name, long programId)
         {
-            return View(school);
+            school.EditStudent(id, name, programId);
+            return View("Index", school.GetStudentByString(null));
+        }
+        [HttpGet]
+        public IActionResult Edit(long id)
+        {
+            return View(school.GetStudentById(id));
         }
 
 
