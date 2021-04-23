@@ -25,8 +25,12 @@
                 PROGRAM
             </td>
             <td>
+                
+            </td>
+            <td>
                 <a asp-controller="Student" asp-action="Create" class="btn btn-primary">Create New Student</a>
             </td>
+            
         </tr>
     </thead>
     @foreach(var item in Model)
@@ -43,6 +47,9 @@
     </td>
     <td>
         <a asp-controller="Student" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+    </td>
+    <td >
+        <a asp-controller="Student" asp-action="Delete" asp-route-id="@item.Id" >Delete Student</a>
     </td>
 </tr>
             }

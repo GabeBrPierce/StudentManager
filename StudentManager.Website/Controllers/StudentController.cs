@@ -35,11 +35,12 @@ namespace StudentManager.Website.Controllers
             school.CreateStudent(id, name, programId);
             return View("Index", school.GetStudentByString(null));
         }
-        [HttpPost]
+        [HttpGet]
         public IActionResult Delete(long id)
         {
+            Student student = school.GetStudentById(id);
             school.DeleteStudent(id);
-            return View("Index", school.GetStudentByString(null));
+            return View(student);
         }
         [HttpPost]
         public IActionResult Edit(long id, string name, long programId)
