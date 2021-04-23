@@ -96,7 +96,7 @@ namespace StudentManager.BL
         public void CreateStudent(long id, string name, long programId)
         {
             Student newStudent = new Student();
-            if (Students.Where(x => x.Id == id) == null)
+            if(!Students.Where(x => x.Id == id).Any())
             {
                 newStudent.Id = id;
                 newStudent.Name = name;

@@ -24,6 +24,11 @@ namespace StudentManager.Website.Controllers
         {
             return View(school.GetStudentByString(searchTerm));
         }
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
         [HttpPost]
         public IActionResult Create(long id, string name, long programId)
         {
